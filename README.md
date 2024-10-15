@@ -1,3 +1,12 @@
+# Bioinformatics Project
+
+This project is focused on performing bioinformatics analysis, including data processing and visualization of genomic data. The purpose is to demonstrate how computational methods can be used in the field of bioinformatics.
+
+## Key Features
+- Data analysis of genomic sequences
+- Visualization of biological data
+- Use of machine learning techniques for pattern recognition
+
 # DS-217 Exam 1
 
 ## Instructions
