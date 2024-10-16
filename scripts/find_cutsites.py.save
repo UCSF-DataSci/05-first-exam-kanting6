@@ -1,4 +1,53 @@
+  UW PICO 5.09                           New Buffer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               [ Read 53 lines ]
+^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Pg   ^K Cut Text  ^C Cur Pos
+^X Exit      ^J Justify   ^W Where is  ^V Next Pg   ^U UnCut Text^T To Spell
+  UW PICO 5.09                     File: find_cutsites.py
+
 import sys
+import os
+
+def find_cutsites(fasta_file, cut_site):
+    # Remove the '|' character from the cut site sequence
+    cut_site = cut_site.replace('|', '')
+
+    # Read the DNA sequence from the FASTA file
+    with open(fasta_file, 'r') as f:
+        dna_sequence = f.read().replace('\n', '')  # Remove all newlines
+
+    # Find all occurrences of the cut site in the DNA sequence
+    cut_positions = []
+    start = 0
+    while True:
+        start = dna_sequence.find(cut_site, start)
+        if start == -1:
+            break
+        cut_positions.append(start)
+        start += len(cut_site)  # Move past the current cut site
+
+^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Pg   ^K Cut Text  ^C Cur Pos
+^X Exit      ^J Justify   ^W Where is  ^V Next Pg   ^U UnCut Text^T To Spell0000000import sys
 import os
 
 def find_cutsites(fasta_file, cut_site):
