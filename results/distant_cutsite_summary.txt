@@ -1,6 +1,9 @@
 Total number of cut site pairs: 2090
+
 Pair 1: (698, 93391)
 Pair 2: (698, 102749)
 Pair 3: (698, 119185)
 Pair 4: (7502, 93391)
 Pair 5: (7502, 102749)
+
+Results saved to bioinformatics_project/results/distant_cutsite_summary.txt
