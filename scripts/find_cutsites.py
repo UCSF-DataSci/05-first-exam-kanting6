@@ -1,18 +1,5 @@
 import sys
 import os
-from Bio import SeqIO
-
-# Path to FASTA file
-fasta_file = "kankantingting/bioinformatics_project/data/random_sequence.fasta"
-
-# Read the FASTA file and print out the sequences
-with open(fasta_file, "r") as file:
-    for record in SeqIO.parse(file, "fasta"):
-        print(f"ID: {record.id}")
-        print(f"Sequence: {record.seq}")
-        print(f"Description: {record.description}")
-        print("-" * 60)
-
 
 def find_cutsites(fasta_file, cut_site):
     # Remove the '|' character from the cut site sequence
