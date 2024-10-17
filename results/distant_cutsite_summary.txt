@@ -1,3 +1,4 @@
+Analyzing cut site: GGATCC
 Total number of cut site pairs: 2090
 
 First 5 pairs:
