@@ -1,4 +1,5 @@
 Analyzing cut site: GGATCC
+Total cut sites found: 6
 Cut site pairs 80-120 kbp apart: 2090
 
 First 5 pairs:
