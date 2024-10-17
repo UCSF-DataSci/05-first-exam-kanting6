@@ -18,6 +18,7 @@ def find_cutsites(fasta_file, cut_site):
             break
         cut_positions.append(start)
         start += len(cut_site)  # Move past the current cut site
+        
     print(f"Total cut sites found: {len(cut_positions)}\n")
 
     # Find pairs of cut sites that are 80,000 - 120,000 bp apart
